@@ -1,0 +1,78 @@
+Reset settingd
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background: #433951;
+}
+
+/* Navigation Styling for Large Screen */
+nav {
+  position: sticky;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ol {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: decimal-leading-zero;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #ffb20a;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #e5e5e5;
+}
+
+/* Landing page styling */
+section {
+  height: 100vh;
+}
+
+div .container-1 {
+  padding-top: 10px;
+}
