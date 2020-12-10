@@ -15,10 +15,10 @@ Reset settingd
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  font-family: "Roboto Mono", monospace;
+  background: #433951;
 }
 
 /* Make images easier to work with */
@@ -40,9 +40,8 @@ select {
   font: inherit;
 }
 
-body {
-  font-family: "Roboto Mono", monospace;
-  background: #433951;
+a:hover {
+  cursor: pointer;
 }
 
 /* Navigation Styling for Large Screen */
@@ -73,6 +72,98 @@ section {
   height: 100vh;
 }
 
-div .container-1 {
-  padding-top: 10px;
+div.landing-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-left: 5vw;
+  padding-right: 30vw;
 }
+
+div.landing-page > h4 {
+  color: #ffb20a;
+  font-weight: lighter;
+  font-size: 1vw;
+  padding-bottom: 0.2em;
+}
+
+div.landing-page > h1 {
+  color: #e5e5e5;
+  font-weight: bold;
+  font-size: 2vw;
+  padding-bottom: 0.3em;
+}
+
+div.landing-page > h2 {
+  color: #e5e5e5;
+  font-weight: bold;
+  font-size: 1.75vw;
+  padding-bottom: 0.3em;
+}
+
+div.landing-page > h3 {
+  color: #b4b3b6;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+div.landing-button button {
+  background-color: #433951;
+  color: #ffb20a;
+  border: 2px solid #ffb20a;
+  font-size: 1vw;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 12em;
+  height: 4.5em;
+}
+
+div.social-media {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 2vh;
+}
+
+div.social-media ul {
+  list-style: none;
+}
+
+.vl {
+  border-left: 1px solid #c0b9ca;
+  height: 100px;
+  align-self: center;
+}
+
+/* div.social-media,
+div.social-media ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+div.social-media {
+  position: fixed;
+  bottom: 0;
+} */
+
+/* .vl {
+  position: fixed;
+  border-left: 6px solid #c0b9ca;
+  height: 100px;
+  bottom: 0;
+} */
+
+/* div.social-media hr {
+  border: 1px solid #c0b9ca;
+  transform: rotate(-89.87deg);
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 2vw;
+} */
