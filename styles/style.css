@@ -82,7 +82,7 @@ div.landing-page {
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 170px;
-  padding-left: 5vw;
+  padding-left: 5.5vw;
   padding-right: 30vw;
 }
 
@@ -199,6 +199,7 @@ div.social-media ul {
 
   div.landing-page > h3 {
     font-size: 2.5vw;
+    text-align: justify;
   }
 
   div.landing-button button {
@@ -207,3 +208,80 @@ div.social-media ul {
 }
 
 /* About Me styling */
+div.about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 5.5vw;
+  padding-right: 10vw;
+}
+
+.about-top {
+  display: inherit;
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+
+.hl {
+  border-top: 1px solid #c0b9ca;
+  width: 15vw;
+  align-self: center;
+  margin-left: 20px;
+}
+
+.num {
+  color: #ffb20a;
+}
+
+.cont {
+  color: #ffffff;
+}
+
+.num,
+.cont {
+  font-weight: bold;
+  font-size: 2.25vw;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content p {
+  text-align: justify;
+  color: #d6d1dc;
+  font-weight: normal;
+  font-size: 1.65vw;
+  padding-bottom: 7px;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 4;
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+.skills li {
+  color: #d6d1dc;
+  font-weight: normal;
+  font-size: 1.45vw;
+  padding-right: 5px;
+}
+
+.skills li:before {
+  content: "";
+  border-color: transparent#ffb20a;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 1em;
+  position: relative;
+}
