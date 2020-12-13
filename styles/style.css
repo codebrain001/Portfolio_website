@@ -224,7 +224,7 @@ div.about-me {
 
 .hl {
   border-top: 1px solid #c0b9ca;
-  width: 15vw;
+  width: 50vw;
   align-self: center;
   margin-left: 20px;
 }
@@ -264,6 +264,7 @@ div.about-me {
 .about-img {
   width: 45%;
   height: 70%;
+  border: 2px solid #ffb20a;
 }
 
 .skills ul {
@@ -298,23 +299,49 @@ div.about-me {
 @media screen and (max-width: 520px) {
   .about-content {
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .about-content-text {
     width: 80vw;
     height: 40%;
+    order: 2;
   }
 
   .about-img {
     width: 80vw;
     height: 40%;
+    order: 1;
+    margin-bottom: 20px;
   }
 
   .about-content p {
     text-align: justify;
     color: #d6d1dc;
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 4vw;
     padding-bottom: 7px;
   }
+
+  .skills li {
+    color: #d6d1dc;
+    font-weight: normal;
+    font-size: 3vw;
+    padding-right: 5px;
+  }
+}
+
+/* Background Styling */
+div.background {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 5.5vw;
+  padding-right: 10vw;
+}
+
+.background-top {
+  display: inherit;
+  flex-direction: row;
+  padding-bottom: 25px;
 }
