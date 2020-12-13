@@ -256,11 +256,19 @@ div.about-me {
   padding-bottom: 7px;
 }
 
+.about-content-text {
+  width: 45%;
+  height: 70%;
+}
+
+.about-img {
+  width: 45%;
+  height: 70%;
+}
+
 .skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-grow: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
   margin: 0.75em 0;
   padding: 0 1em;
   list-style: none;
@@ -284,4 +292,29 @@ div.about-me {
   left: -1em;
   top: 1em;
   position: relative;
+}
+
+/* Media Query small tablet screen */
+@media screen and (max-width: 520px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-content-text {
+    width: 80vw;
+    height: 40%;
+  }
+
+  .about-img {
+    width: 80vw;
+    height: 40%;
+  }
+
+  .about-content p {
+    text-align: justify;
+    color: #d6d1dc;
+    font-weight: normal;
+    font-size: 3vw;
+    padding-bottom: 7px;
+  }
 }
