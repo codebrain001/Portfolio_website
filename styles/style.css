@@ -212,7 +212,7 @@ div.about-me {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 5.5vw;
+  padding-left: 5vw;
   padding-right: 10vw;
 }
 
@@ -336,12 +336,15 @@ div.background {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 5.5vw;
+  padding-left: 5vw;
   padding-right: 10vw;
 }
 
 .background-top {
   display: inherit;
   flex-direction: row;
+  padding-top: 50px;
   padding-bottom: 25px;
 }
+
+
