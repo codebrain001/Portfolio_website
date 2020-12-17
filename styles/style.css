@@ -19,6 +19,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: "Roboto Mono", monospace;
   background: #433951;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Make images easier to work with */
@@ -282,7 +283,7 @@ div.about-me {
 }
 
 .about-content p {
-  text-align: justify;
+  -webkit-font-smoothing: antialiased;
   color: #d6d1dc;
   font-weight: normal;
   font-size: 1.65vw;
@@ -316,8 +317,13 @@ div.about-me {
 }
 
 .skills li:before {
-  content: "";
-  border-color: transparent#ffb20a;
+  content: "▹";
+  position: relative;
+  left: 0px;
+  color: #ffb20a;
+  font-size: var(--fz-sm);
+  line-height: 12px;
+  /* border-color: transparent#ffb20a;
   border-style: solid;
   border-width: 0.35em 0 0.35em 0.45em;
   display: block;
@@ -325,7 +331,7 @@ div.about-me {
   width: 0;
   left: -1em;
   top: 1em;
-  position: relative;
+  position: relative; */
 }
 
 /* Media Query small tablet screen */
@@ -473,4 +479,23 @@ div.background {
   left: -1em;
   top: 1em;
   position: relative;
+}
+
+#edu-head {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 12.5px;
+}
+
+#edu-head h2 {
+  font-size: 1.9vw;
+  color: #e5e5e5;
+  font-weight: lighter;
+  padding-right: 7.5px;
+}
+
+#edu-head .iconify {
+  align-items: center;
+  font-size: 2vw;
 }
