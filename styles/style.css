@@ -69,6 +69,10 @@ nav a {
   color: #e5e5e5;
 }
 
+nav a:active {
+  border-bottom: 2px solid #ffb20a;
+}
+
 nav .iconify {
   display: none;
 }
@@ -86,36 +90,36 @@ div.landing-page {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 170px;
-  padding-left: 5.5vw;
+  padding-top: 180px;
+  padding-left: 6vw;
   padding-right: 30vw;
 }
 
 div.landing-page > h4 {
   color: #ffb20a;
   font-weight: lighter;
-  font-size: 1vw;
-  padding-bottom: 0.2em;
+  font-size: 1.5vw;
+  padding-bottom: 0.15em;
 }
 
 div.landing-page > h1 {
   color: #e5e5e5;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 2.5vw;
   padding-bottom: 0.3em;
 }
 
 div.landing-page > h2 {
   color: #e5e5e5;
   font-weight: bold;
-  font-size: 1.75vw;
+  font-size: 2.25vw;
   padding-bottom: 0.3em;
 }
 
 div.landing-page > h3 {
   color: #b4b3b6;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 div.landing-button button {
@@ -127,6 +131,7 @@ div.landing-button button {
   text-decoration: none;
   padding: 10px;
   margin-top: 20px;
+  margin-right: 20px;
   cursor: pointer;
   width: 12em;
   height: 4.5em;
