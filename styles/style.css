@@ -74,6 +74,10 @@ nav .iconify {
 
 /* Landing page styling */
 section {
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+}
+section#section-1 {
   height: 100vh;
 }
 
@@ -146,10 +150,10 @@ div.social-media ul {
 }
 
 /* Media Query small tablet screen */
-@media screen and (min-width: 521px) and (max-width: 780px) {
+@media screen and (min-width: 521px) and (max-width: 1024px) {
   nav a {
     text-decoration: none;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 500;
     color: #e5e5e5;
   }
@@ -159,6 +163,35 @@ div.social-media ul {
     font-weight: 500;
     color: #ffb20a;
     padding: 10px 0;
+  }
+
+  div.landing-page {
+    padding-top: 250px;
+  }
+
+  div.landing-page > h4 {
+    font-size: 3vw;
+    padding-bottom: 0.2em;
+  }
+
+  div.landing-page > h1 {
+    font-size: 6vw;
+    padding-bottom: 0.2em;
+  }
+
+  div.landing-page > h2 {
+    font-size: 4.5vw;
+    padding-bottom: 0.2em;
+  }
+
+  div.landing-page > h3 {
+    font-size: 2.5vw;
+    text-align: justify;
+    padding-bottom: 1.5em;
+  }
+
+  div.landing-button button {
+    font-size: 2vw;
   }
 }
 
@@ -332,6 +365,7 @@ div.about-me {
 }
 
 /* Background Styling */
+
 div.background {
   display: flex;
   flex-direction: column;
@@ -343,6 +377,5 @@ div.background {
 .background-top {
   display: inherit;
   flex-direction: row;
-  padding-top: 50px;
   padding-bottom: 25px;
 }
