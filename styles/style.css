@@ -409,7 +409,7 @@ div.background {
 }
 
 .exp-section .exp {
-    width: 35%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   height: 259px;
@@ -425,7 +425,7 @@ div.background {
 }
 
 .exp-section #exp-content {
-    width: 65%;
+  width: 65%;
 }
 
 .exp button {
@@ -437,4 +437,40 @@ div.background {
   text-align: center;
   text-decoration: none;
   font-size: 1vw;
+}
+
+#exp-content h1 {
+  color: #e5e5e5;
+  font-size: 1.6vw;
+}
+
+#exp-content h2 {
+  color: #e5e5e5;
+  font-size: 0.8vw;
+  padding-top: 5px;
+}
+
+#exp-content ul {
+  list-style: none;
+}
+
+#exp-content li {
+  color: #d6d1dc;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 1vw;
+  padding-left: 15px;
+}
+
+#exp-content li:before {
+  content: "";
+  border-color: transparent#ffb20a;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 1em;
+  position: relative;
 }
