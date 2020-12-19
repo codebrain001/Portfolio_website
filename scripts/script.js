@@ -1,3 +1,8 @@
+
+
+
+
+
 //Landing Page animination 
 let textWrapper = document.querySelector('#skills');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

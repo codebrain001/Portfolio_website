@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta description of the website -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aboze Brain John Jnr">
@@ -8,23 +9,32 @@
     <meta property="og:description" content="A responsive portfolio website designed and developed by Aboze Brain John.">
     <meta property="og:title" content="Aboze Brain John Portfolio website">
     <meta name="twitter:title" content="Aboze Brain John Portfolio website">
+    <!-- Link to Favicon icon on the header of the website on the web browser -->
     <link rel="icon" href="images/favicon.png">
+    <!-- Link to google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <!-- CSS style sheet -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Aboze Brain John Portfolio website</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
-            <ol class="menu">
+            <ol  class="menu">
                 <li><a href="#section-2">About</a></li>
                 <li><a href="#section-3">Background</a></li>
                 <li><a href="#section-4">Pencraft</a></li>
                 <li><a href="#section-5">Talks</a></li>
                 <li><a href="#section-6">Contact</a></li>
-                <span class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #FFB20A; font-size: 24px;"></span>
+                <!-- <span id="ham" class="iconify" data-inline="false" data-icon="cil:hamburger-menu" style="color: #FFB20A; font-size: 24px;"></span> -->
             </ol>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
     <section id="section-1">
@@ -37,8 +47,8 @@
             <h3>I am a frontend developer and data scientist, 
                 specializing in designing, building and documenting data-driven products </h3>
             <div class="landing-button">
-                <button onclick="document.location='#'">Download CV</button>
-                <button onclick="document.location='mailto:411.codebrain@gmail.com'">Get in Touch</button>
+                <button type="button" onclick="document.location='#'">Download CV</button>
+                <button type="button" onclick="window.open('mailto:411.codebrain@gmail.com?subject=Connect' , '_blank')">Get in Touch</button>
             </div>
         </div>
         <div class="social-media">
