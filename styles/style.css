@@ -47,11 +47,16 @@ a:hover {
 
 /* Navigation Styling for Large Screen */
 nav {
-  position: sticky;
   display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  /* z-index: 11; */
+  backdrop-filter: blur(80px);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3); */
   height: 6vh;
 }
 
@@ -86,6 +91,7 @@ nav a:hover {
   height: 3px;
   background-color: #ffb20a;
   margin: 5px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 /* Media Query tablet screen */
@@ -105,23 +111,30 @@ nav a:hover {
   }
 }
 
+/* Medial Query Phone size */
 @media screen and (max-width: 520px) {
+  .shadow-off {
+    box-shadow: none;
+    transition: transform 1s ease-in;
+  }
+
   body {
     overflow-x: hidden;
   }
 
   .menu {
-    position: absolute;
+    position: fixed;
     right: 0px;
-    height: 94vh;
-    width: 5 0%;
-    top: 6vh;
-    background-image: linear-gradient(to bottom right, #423a4e, #7b6096);
+    height: 100vh;
+    width: 50%;
+    top: 0vh;
+    /* backdrop-filter: blur(80px); */
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
-    transition: ;
+    transition: transform 1s ease-in;
   }
 
   .menu li {
@@ -141,8 +154,38 @@ nav a:hover {
     margin-right: 15px;
   }
 
-  .menu-active{
-      transform: translateX(0%);
+  .remove-blur {
+    backdrop-filter: none;
+  }
+
+  .add-blur {
+    backdrop-filter: blur(80px);
+  }
+
+  .menu-active {
+    transform: translateX(0%);
   }
 }
 
+@keyframes linkFade {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
