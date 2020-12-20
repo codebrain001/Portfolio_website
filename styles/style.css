@@ -278,12 +278,28 @@ div.social-media {
   left: 2vh;
 }
 
+div.social-media .iconify {
+  color: #b4b3b6;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+div.social-media .iconify:hover {
+  color: #ffb20a;
+  font-size: 24px;
+}
+
+div.social-media .iconify:active {
+  color: #ffb20a;
+  font-size: 24.5px;
+}
+
 div.social-media ul {
   list-style: none;
 }
 
 .vl {
   border-left: 1px solid #c0b9ca;
-  height: 100px;
+  height: 50px;
   align-self: center;
 }
