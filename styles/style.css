@@ -281,7 +281,6 @@ div.social-media {
 div.social-media .iconify {
   color: #b4b3b6;
   font-size: 24px;
-  cursor: pointer;
 }
 
 div.social-media .iconify:hover {
@@ -302,4 +301,41 @@ div.social-media ul {
   border-left: 1px solid #c0b9ca;
   height: 50px;
   align-self: center;
+}
+
+/* Landing page styling Mobile */
+@media screen and (max-width: 520px) {
+  div.landing-page {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  div.social-media,
+  .vl {
+    display: none;
+  }
+
+  div.landing-page > h4 {
+    font-size: 4vw;
+    padding-bottom: 0.025em;
+  }
+
+  div.landing-page > h1 {
+    font-size: 9vw;
+    padding-bottom: 0.05em;
+  }
+
+  div.landing-page > h2 {
+    font-size: 7.5vw;
+    padding-bottom: 0.05em;
+  }
+
+  div.landing-page > h3 {
+    font-size: 3.75vw;
+    text-align: justify;
+  }
+
+  div.landing-button button {
+    font-size: 3vw;
+  }
 }
