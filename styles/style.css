@@ -163,7 +163,8 @@ nav a:hover {
   }
 
   .body-fixed {
-    position: fixed;
+    height: 100%;
+    overflow: hidden;
   }
 
   .menu-active {
@@ -192,4 +193,97 @@ nav a:hover {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Landing page styling Laptop */
+
+/* Landing page styling */
+section {
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+}
+section#section-1 {
+  height: 100vh;
+  display: flex;
+}
+
+div.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+div.landing-page > h4 {
+  color: #ffb20a;
+  font-weight: lighter;
+  font-size: 2vw;
+  padding-bottom: 0.025em;
+}
+
+div.landing-page > h1 {
+  color: #e5e5e5;
+  font-weight: bolder;
+  font-size: 4.5vw;
+  padding-bottom: 0.05em;
+}
+
+div.landing-page > h2 {
+  color: #d1cfd4;
+  font-weight: bold;
+  font-size: 4vw;
+  padding-bottom: 0.05em;
+}
+
+div.landing-page > h3 {
+  color: #b4b3b6;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-align: justify;
+  font-size: 2.5vw;
+}
+
+div.landing-button button {
+  background-color: #433951;
+  color: #ffb20a;
+  border: 2px solid #ffb20a;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  width: 12em;
+  height: 4.5em;
+  outline: none;
+}
+
+div.landing-button button:hover {
+  background-color: #3a3049;
+}
+
+div.landing-button button:active {
+  background-color: #3a3049;
+  border: 3px solid #ffb20a;
+}
+
+div.social-media {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 2vh;
+}
+
+div.social-media ul {
+  list-style: none;
+}
+
+.vl {
+  border-left: 1px solid #c0b9ca;
+  height: 100px;
+  align-self: center;
 }
