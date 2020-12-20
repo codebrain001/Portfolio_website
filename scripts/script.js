@@ -9,6 +9,9 @@ let menuLinks = document.querySelectorAll('.menu li');
 burger.addEventListener('click', () => {
     nav.classList.toggle('menu-active');
 
+    // Fixed the body section 
+    document.querySelector('body').classList.toggle('body-fixed');
+   
     // Remove the blur on the navigation bar (Mobile)
     navBar.classList.toggle('remove-blur');
 
@@ -25,6 +28,8 @@ burger.addEventListener('click', () => {
         });
         // Burger toggle
         burger.classList.toggle('toggle');
+
+    
 })
 
 }
