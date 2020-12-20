@@ -218,7 +218,7 @@ div.landing-page {
 div.landing-page > h4 {
   color: #ffb20a;
   font-weight: lighter;
-  font-size: 2vw;
+  font-size: 1.5vw;
   padding-bottom: 0.025em;
 }
 
@@ -241,7 +241,7 @@ div.landing-page > h3 {
   font-weight: bold;
   word-wrap: break-word;
   text-align: justify;
-  font-size: 2.5vw;
+  font-size: 1.6vw;
 }
 
 div.landing-button button {
@@ -249,7 +249,7 @@ div.landing-button button {
   color: #ffb20a;
   border: 2px solid #ffb20a;
   border-radius: 5px;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   text-align: center;
   text-decoration: none;
   padding: 10px;

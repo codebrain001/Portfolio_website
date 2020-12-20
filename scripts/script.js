@@ -1,61 +1,62 @@
 // Mobile navigation toggle button
 let nav_interative = () => {
-    let burger = document.querySelector('.burger');
-    let nav = document.querySelector('.menu');
-    let navBar = document.querySelector('nav');
-    let menuLinks = document.querySelectorAll('.menu li');
+let burger = document.querySelector('.burger');
+let nav = document.querySelector('.menu');
+let navBar = document.querySelector('nav');
+let menuLinks = document.querySelectorAll('.menu li');
 
-    // Toggle Menu
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('menu-active');
+// Toggle Menu
+burger.addEventListener('click', () => {
+    nav.classList.toggle('menu-active');
 
-        // Fixed the body section 
-        document.querySelector('body').classList.toggle('body-fixed');
-    
-        // Remove the blur on the navigation bar (Mobile)
-        navBar.classList.toggle('remove-blur');
+    // Fixed the body section 
+    document.querySelector('body').classList.toggle('body-fixed');
+   
+    // Remove the blur on the navigation bar (Mobile)
+    navBar.classList.toggle('remove-blur');
 
-        // Add the blur on the navigation bar (Mobile)
-        nav.classList.toggle('add-blur');
+    // Add the blur on the navigation bar (Mobile)
+    nav.classList.toggle('add-blur');
 
-        // Animate Links
-        menuLinks.forEach((link, index)=>{
-            if (link.style.animation){
-                link.style.animation = '';
-            } else {
-                link.style.animation = `linkFade 0.5s ease forwards ${index/7 +2}s`;
-            }
-            });
+    // Animate Links
+    menuLinks.forEach((link, index)=>{
+        if (link.style.animation){
+            link.style.animation = '';
+        } else {
+            link.style.animation = `linkFade 0.5s ease forwards ${index/7 +2}s`;
+        }
+        });
 
-            // Burger toggle
-            burger.classList.toggle('toggle');
-    })
+        // Burger toggle
+        burger.classList.toggle('toggle');
+})
 
 }
 
 nav_interative();
 
 
+// Landing Page animination 
+let textWrapper = document.querySelector('#skills');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-//Landing Page animination 
-// let textWrapper = document.querySelector('#skills');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+anime.timeline({loop: true})
+  .add({
+    targets: '#skills .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '#skills',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 
-// anime.timeline({loop: true})
-//   .add({
-//     targets: '#skills .letter',
-//     opacity: [0,1],
-//     easing: "easeInOutQuad",
-//     duration: 2250,
-//     delay: (el, i) => 150 * (i+1)
-//   }).add({
-//     targets: '#skills',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });
 
+  
 
 // function content1(){
 //     let codeBlock = '<div class="content">' +
