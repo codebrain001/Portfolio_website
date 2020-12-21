@@ -406,3 +406,30 @@ div.about-me {
   height: 60%;
   border: 2px solid #ffb20a;
 }
+.skills {
+  padding-top: 2.5em;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  margin: 0.75em 0;
+  list-style: none;
+}
+
+.skills li {
+  color: #d6d1dc;
+  font-weight: normal;
+  font-size: 1.25vw;
+  padding-right: 5px;
+}
+
+.skills li:before {
+  content: "▹";
+  position: relative;
+  left: 0px;
+  color: #ffb20a;
+  font-size: var(--fz-sm);
+  line-height: 12px;
+  padding-right: 1em;
+}
