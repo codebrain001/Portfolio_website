@@ -503,7 +503,7 @@ div.background {
 #background-head h2 {
   font-size: 1.9vw;
   color: #e5e5e5;
-  font-weight: lighter;
+  font-weight: bold;
   padding-right: 7.5px;
 }
 
@@ -527,14 +527,14 @@ div.background {
   width: 35%;
   display: flex;
   flex-direction: column;
-  height: 259px;
+  height: 290px;
   overflow: scroll;
   overflow-x: hidden;
 }
 
 .exp-section #exp-vl {
   border-left: 2px solid #ffb20a;
-  height: 250px;
+  height: 290px;
   align-self: center;
   margin: 0 10px;
 }
@@ -562,8 +562,8 @@ div.background {
 
 #exp-content h2 {
   color: #e5e5e5;
-  font-size: 0.8vw;
-  padding-top: 5px;
+  font-size: 1vw;
+  padding: 5px 0;
 }
 
 #exp-content ul {
@@ -574,15 +574,73 @@ div.background {
   color: #d6d1dc;
   text-align: justify;
   font-weight: normal;
-  font-size: 1vw;
+  font-size: 1.2vw;
   padding-left: 15px;
 }
 
 #exp-content li:before {
-    content: "▹";
-    position: relative;
-    left: 0px;
-    color: #ffb20a;
-    line-height: 12px;
-    padding-right: 1em;
+  content: "▹";
+  position: relative;
+  left: 0px;
+  color: #ffb20a;
+  line-height: 12px;
+  padding-right: 1em;
+}
+
+#edu-head {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 12.5px;
+}
+
+#edu-head h2 {
+  font-size: 1.9vw;
+  color: #e5e5e5;
+  font-weight: bold;
+  padding-right: 7.5px;
+}
+
+#edu-head .iconify {
+  align-items: center;
+  font-size: 2vw;
+}
+
+.edu-content h2,
+li {
+  color: #e5e5e5;
+  font-weight: lighter;
+}
+
+.edu-content h1 {
+  color: #e5e5e5;
+  font-weight: bold;
+  font-size: 1.6vw;
+}
+
+.edu-content h2 {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.edu-content li {
+  font-size: 1vw;
+}
+
+.edu-content li {
+  list-style: none;
+  color: #d6d1dc;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 1.2vw;
+  padding-left: 15px;
+}
+
+.edu-content li:before {
+  content: "▹";
+  position: relative;
+  left: 0px;
+  color: #ffb20a;
+  line-height: 12px;
+  padding-right: 1em;
 }
