@@ -341,3 +341,68 @@ div.social-media ul {
 }
 
 /* About Me Page Styling (Large Screen) */
+
+div.about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 7.5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.about-top {
+  display: inherit;
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+
+.hl {
+  border-top: 1px solid #c0b9ca;
+  width: 50vw;
+  align-self: center;
+  margin-left: 20px;
+}
+
+.num {
+  color: #ffb20a;
+}
+
+.cont {
+  color: #ffffff;
+}
+
+.num,
+.cont {
+  font-weight: bold;
+  font-size: 2.25vw;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content p {
+  color: #d6d1dc;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 1.77vw;
+  padding-bottom: 5px;
+}
+
+.about-content-text {
+  width: 45%;
+  height: 60%;
+}
+
+.about-content-text a {
+  text-decoration: none;
+  color: #ffb20a;
+}
+
+.about-img {
+  width: 45%;
+  height: 60%;
+  border: 2px solid #ffb20a;
+}
