@@ -561,6 +561,16 @@ div.background {
   text-align: center;
   text-decoration: none;
   font-size: 1vw;
+  outline: none;
+}
+
+.exp button:hover {
+  background-color: #3a3049;
+}
+
+.exp button:active {
+  background-color: #3a3049;
+  border: 3px solid #ffb20a;
 }
 
 #exp-content h1 {
