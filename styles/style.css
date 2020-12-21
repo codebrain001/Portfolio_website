@@ -495,20 +495,94 @@ div.background {
 }
 
 #background-head {
-    display: flex;
-    align-items: center;
-    padding-bottom: 12.5px;
-  }
-  
-  #background-head h2 {
-    font-size: 1.9vw;
-    color: #e5e5e5;
-    font-weight: lighter;
-    padding-right: 7.5px;
-  }
-  
-  #background-head .iconify {
-    align-items: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 12.5px;
+}
+
+#background-head h2 {
+  font-size: 1.9vw;
+  color: #e5e5e5;
+  font-weight: lighter;
+  padding-right: 7.5px;
+}
+
+#background-head .iconify {
+  align-items: center;
+  color: #ffb20a;
+  font-size: 2vw;
+}
+
+#background-content {
+  display: inherit;
+  flex-direction: column;
+}
+
+.exp-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-section .exp {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  height: 259px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.exp-section #exp-vl {
+  border-left: 2px solid #ffb20a;
+  height: 250px;
+  align-self: center;
+  margin: 0 10px;
+}
+
+.exp-section #exp-content {
+  width: 65%;
+}
+
+.exp button {
+  background-color: #433951;
+  color: #e5e5e5;
+  border: 1px solid #b4b3b6;
+  border-radius: 5px;
+  padding: 15px 32px;
+  margin-bottom: 7.5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+#exp-content h1 {
+  color: #e5e5e5;
+  font-size: 1.6vw;
+}
+
+#exp-content h2 {
+  color: #e5e5e5;
+  font-size: 0.8vw;
+  padding-top: 5px;
+}
+
+#exp-content ul {
+  list-style: none;
+}
+
+#exp-content li {
+  color: #d6d1dc;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 1vw;
+  padding-left: 15px;
+}
+
+#exp-content li:before {
+    content: "▹";
+    position: relative;
+    left: 0px;
     color: #ffb20a;
-    font-size: 2vw;
-  }
+    line-height: 12px;
+    padding-right: 1em;
+}
