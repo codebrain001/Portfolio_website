@@ -407,7 +407,7 @@ div.about-me {
   border: 2px solid #ffb20a;
 }
 .skills {
-  padding-top: 2.5em;
+  padding-top: 2em;
 }
 
 .skills ul {
@@ -429,7 +429,51 @@ div.about-me {
   position: relative;
   left: 0px;
   color: #ffb20a;
-  font-size: var(--fz-sm);
   line-height: 12px;
   padding-right: 1em;
 }
+
+/* About Me styling (Mobile) */
+@media screen and (max-width: 520px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about-content-text {
+    width: 80vw;
+    height: 40%;
+    order: 2;
+  }
+
+  .about-img {
+    width: 80vw;
+    height: 40%;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .about-content p {
+    text-align: justify;
+    color: #d6d1dc;
+    font-weight: normal;
+    font-size: 4vw;
+    padding-bottom: 7px;
+  }
+
+  .skills ul {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 0.1em 0;
+    list-style: none;
+  }
+
+  .skills li {
+    color: #d6d1dc;
+    font-weight: normal;
+    font-size: 3.75vw;
+    padding-right: 3px;
+  }
+}
+
+
