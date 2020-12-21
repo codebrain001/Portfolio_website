@@ -346,7 +346,8 @@ div.about-me {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 7.5vh;
+  height: 100%;
+  padding-top: 6vh;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -476,4 +477,38 @@ div.about-me {
   }
 }
 
+/* Background Styling */
+div.background {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding-top: 6vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 
+.background-top {
+  display: inherit;
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+
+#background-head {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12.5px;
+  }
+  
+  #background-head h2 {
+    font-size: 1.9vw;
+    color: #e5e5e5;
+    font-weight: lighter;
+    padding-right: 7.5px;
+  }
+  
+  #background-head .iconify {
+    align-items: center;
+    color: #ffb20a;
+    font-size: 2vw;
+  }
