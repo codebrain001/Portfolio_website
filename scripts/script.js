@@ -60,6 +60,11 @@ anime.timeline({loop: true})
 
 let buttons = document.getElementsByClassName('buttons');
 
+function inject(codeBlock){
+    content = document.getElementById("exp-content");
+    content.innerHTML = codeBlock;
+};
+
 buttons.item(0).addEventListener('click', ()=>{
     let codeBlock = '<div class="content">' +
         '<h1>Data Scientist and Analyst</h1>' +
@@ -73,8 +78,7 @@ buttons.item(0).addEventListener('click', ()=>{
         '</ul>' +
         '</div>'
     // Inserting the code block to wrapper element
-    content = document.getElementById("exp-content")
-    content.innerHTML = codeBlock
+    inject(codeBlock);
 })
 
 buttons.item(1).addEventListener('click', ()=>{
@@ -88,8 +92,9 @@ buttons.item(1).addEventListener('click', ()=>{
         '</ul>' +
         '</div>'
 
-            content = document.getElementById("exp-content")
-            content.innerHTML = codeBlock
+      // Inserting the code block to wrapper element
+      inject(codeBlock);     
+            
 })
 
 
@@ -103,8 +108,8 @@ buttons.item(2).addEventListener('click', ()=>{
         '</ul>' +
         '</div>'
 
-        content = document.getElementById("exp-content")
-        content.innerHTML = codeBlock
+     // Inserting the code block to wrapper element
+     inject(codeBlock);  
 })
 
 buttons.item(3).addEventListener('click', ()=>{
@@ -117,47 +122,47 @@ buttons.item(3).addEventListener('click', ()=>{
         '</ul>' +
         '</div>'
 
-        content = document.getElementById("exp-content")
-        content.innerHTML = codeBlock
+       // Inserting the code block to wrapper element
+      inject(codeBlock);  
 })
 
 
 buttons.item(4).addEventListener('click', ()=>{
     let codeBlock = '<div>' +
-                    '<h1>Contributing Writer</h1>' +
-                    '<h2>September 2020 - Present</h2>' +
-                    '<ul>' +
-                        '<li>Provide technical content in the areas of data visualization, data science, and machine learning using Neptune resources.</li>' +
-                    '</ul>' +
-                    '</div>'
+        '<h1>Contributing Writer</h1>' +
+        '<h2>September 2020 - Present</h2>' +
+        '<ul>' +
+            '<li>Provide technical content in the areas of data visualization, data science, and machine learning using Neptune resources.</li>' +
+        '</ul>' +
+        '</div>'
 
-                    content = document.getElementById("exp-content")
-                    content.innerHTML = codeBlock
+        // Inserting the code block to wrapper element
+        inject(codeBlock);  
 })
 
 buttons.item(5).addEventListener('click', ()=>{
     let codeBlock = '<div>' +
-                    '<h1>Contributing Writer</h1>' +
-                    '<h2>October 2020 - Present</h2>' +
-                    '<ul>' +
-                        '<li>Provide technical content in the areas of data visualization, data science, and machine learning using Vonage resources.</li>' +
-                    '</ul>' +
-                    '</div>'
+        '<h1>Contributing Writer</h1>' +
+        '<h2>October 2020 - Present</h2>' +
+        '<ul>' +
+            '<li>Provide technical content in the areas of data visualization, data science, and machine learning using Vonage resources.</li>' +
+        '</ul>' +
+        '</div>'
 
-                    content = document.getElementById("exp-content")
-                    content.innerHTML = codeBlock
+        // Inserting the code block to wrapper element
+        inject(codeBlock);  
 })
 
 
 buttons.item(6).addEventListener('click', ()=>{
     let codeBlock = '<div>' +
-                    '<h1>Contributing Writer</h1>' +
-                    '<h2>April 2020 - Present</h2>' +
-                    '<ul>' +
-                        '<li>Provide technical content in the areas of data visualization, data science, and machine learning using Saturn Cloud resources.</li>' +
-                    '</ul>' +
-                    '</div>'
+        '<h1>Contributing Writer</h1>' +
+        '<h2>April 2020 - Present</h2>' +
+        '<ul>' +
+            '<li>Provide technical content in the areas of data visualization, data science, and machine learning using Saturn Cloud resources.</li>' +
+        '</ul>' +
+        '</div>'
 
-                    content = document.getElementById("exp-content")
-                    content.innerHTML = codeBlock
+        // Inserting the code block to wrapper element
+        inject(codeBlock);  
 })
