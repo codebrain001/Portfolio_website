@@ -543,14 +543,6 @@ div.background {
   width: 65%;
 }
 
-/* div#exp-content {
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -moz-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  -o-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-} */
-
 .exp button {
   background-color: #433951;
   color: #e5e5e5;
@@ -571,6 +563,14 @@ div.background {
 .exp button:active {
   background-color: #3a3049;
   border: 3px solid #ffb20a;
+}
+
+div#exp-content {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 #exp-content h1 {
@@ -661,4 +661,26 @@ li {
   color: #ffb20a;
   line-height: 12px;
   padding-right: 1em;
+}
+
+/* Background styling (Mobile) */
+@media screen and (max-width: 520px) {
+  .exp-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-section .exp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 35px;
+    width: 75vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  #exp-vl {
+    display: none;
+  }
 }

@@ -55,14 +55,11 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-  
-
-
 let buttons = document.getElementsByClassName('buttons');
+let content = document.getElementById("exp-content");
 
 function inject(codeBlock){
-    content = document.getElementById("exp-content");
-    content.innerHTML = codeBlock;
+    content.innerHTML = codeBlock;  
 };
 
 buttons.item(0).addEventListener('click', ()=>{
@@ -77,12 +74,13 @@ buttons.item(0).addEventListener('click', ()=>{
             '<li>Execute community building strategies and deliver stellar community engagements.</li>' +
         '</ul>' +
         '</div>'
-    // Inserting the code block to wrapper element
-    inject(codeBlock);
+
+        // Inserting the code block to wrapper element
+        inject(codeBlock);  
 })
 
 buttons.item(1).addEventListener('click', ()=>{
-    let codeBlock = '<div>' +
+    let codeBlock = '<div class="content">' +
         '<h1>Data Science Teaching Assistant</h1>' +
         '<h2>July 2020 - September 2020</h2>' +
         '<ul>' +
@@ -92,14 +90,13 @@ buttons.item(1).addEventListener('click', ()=>{
         '</ul>' +
         '</div>'
 
-      // Inserting the code block to wrapper element
-      inject(codeBlock);     
-            
+        // Inserting the code block to wrapper element
+        inject(codeBlock);       
 })
 
 
 buttons.item(2).addEventListener('click', ()=>{
-    let codeBlock = '<div>' +
+    let codeBlock = '<div class="content">' +
         '<h1> Learning Facilitator</h1>' +
         '<h2> October 2020 - Present</h2>' +
         '<ul>' +
@@ -108,12 +105,13 @@ buttons.item(2).addEventListener('click', ()=>{
         '</ul>' +
         '</div>'
 
-     // Inserting the code block to wrapper element
-     inject(codeBlock);  
+        // Inserting the code block to wrapper element
+        inject(codeBlock);  
 })
 
 buttons.item(3).addEventListener('click', ()=>{
-    let codeBlock = '<div>' +
+
+    let codeBlock = '<div class="content">' +
         '<h1> Learning Facilitator</h1>' +
         '<h2> September 2018 - Present</h2>' +
         '<ul>' +
@@ -127,21 +125,21 @@ buttons.item(3).addEventListener('click', ()=>{
 })
 
 
-buttons.item(4).addEventListener('click', ()=>{
-    let codeBlock = '<div>' +
+buttons.item(4).addEventListener('click', ()=>{    
+    let codeBlock = '<div class="content">' +
         '<h1>Contributing Writer</h1>' +
         '<h2>September 2020 - Present</h2>' +
         '<ul>' +
             '<li>Provide technical content in the areas of data visualization, data science, and machine learning using Neptune resources.</li>' +
         '</ul>' +
         '</div>'
-
+       
         // Inserting the code block to wrapper element
         inject(codeBlock);  
 })
 
 buttons.item(5).addEventListener('click', ()=>{
-    let codeBlock = '<div>' +
+    let codeBlock = '<div class="content">' +
         '<h1>Contributing Writer</h1>' +
         '<h2>October 2020 - Present</h2>' +
         '<ul>' +
@@ -155,7 +153,7 @@ buttons.item(5).addEventListener('click', ()=>{
 
 
 buttons.item(6).addEventListener('click', ()=>{
-    let codeBlock = '<div>' +
+    let codeBlock = '<div class="content">' +
         '<h1>Contributing Writer</h1>' +
         '<h2>April 2020 - Present</h2>' +
         '<ul>' +
