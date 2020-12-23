@@ -21,6 +21,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* Make images easier to work with */
@@ -492,7 +493,7 @@ div.background {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 100%;
   padding-top: 6vh;
   padding-left: 10vw;
   padding-right: 10vw;
