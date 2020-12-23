@@ -376,7 +376,7 @@ div.about-me {
 .num,
 .cont {
   font-weight: bold;
-  font-size: 2.25vw;
+  font-size: 2.5vw;
 }
 
 .about-content {
@@ -436,6 +436,16 @@ div.about-me {
 
 /* About Me styling (Mobile) */
 @media screen and (max-width: 520px) {
+  .num,
+  .cont {
+    font-weight: bold;
+    font-size: 4.5vw;
+  }
+
+  .hl {
+    width: 30vw;
+  }
+
   .about-content {
     flex-direction: column;
     justify-content: space-between;
@@ -665,6 +675,18 @@ li {
 
 /* Background styling (Mobile) */
 @media screen and (max-width: 520px) {
+  .background-top {
+    padding-bottom: 10px;
+  }
+
+  #background-head h2 {
+    font-size: 3.5vw;
+  }
+
+  #background-head .iconify {
+    font-size: 3.5vw;
+  }
+
   .exp-section {
     display: flex;
     flex-direction: column;
@@ -674,13 +696,113 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 35px;
+    height: 75px;
     width: 75vw;
     overflow-x: scroll;
     overflow-y: hidden;
   }
 
-  #exp-vl {
-    display: none;
+  .exp-section #exp-vl {
+    height: 80vw;
+    transform: rotate(90deg);
+    align-self: center;
+    margin-top: -38vw;
   }
+  .exp-section #exp-content {
+    width: 100%;
+    margin-top: -35vw;
+  }
+
+  #exp-content h1 {
+    font-size: 3.2vw;
+    padding-bottom: 5px;
+  }
+
+  #exp-content h2 {
+    font-size: 2.2vw;
+  }
+
+  #exp-content li {
+    font-size: 2.7vw;
+  }
+
+  .exp button {
+    background-color: #433951;
+    color: #e5e5e5;
+    border: 1px solid #b4b3b6;
+    border-radius: 5px;
+    padding: 2px 40px;
+    margin-bottom: 2px;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+
+  #edu-head {
+    padding-top: 15px;
+    padding-bottom: 12.5px;
+  }
+
+  #edu-head h2 {
+    font-size: 3.5vw;
+  }
+
+  #edu-head .iconify {
+    font-size: 3.5vw;
+  }
+  .edu-content h1 {
+    font-size: 3.2vw;
+    padding-bottom: 5px;
+  }
+
+  .edu-content h2 {
+    font-size: 2.2vw;
+    padding-top: 5px;
+  }
+
+  .edu-content li {
+    font-size: 2.7vw;
+  }
+
+  /* 
+  
+  
+  
+  .edu-content h2,
+  li {
+    color: #e5e5e5;
+    font-weight: lighter;
+  }
+  
+  .edu-content h1 {
+    color: #e5e5e5;
+    font-weight: bold;
+    font-size: 1.6vw;
+  }
+  
+  .edu-content h2 {
+    font-size: 1vw;
+    font-weight: bold;
+  }
+  
+  .edu-content li {
+    font-size: 1vw;
+  }
+  
+  .edu-content li {
+    list-style: none;
+    color: #d6d1dc;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.2vw;
+    padding-left: 15px;
+  }
+  
+  .edu-content li:before {
+    content: "▹";
+    position: relative;
+    left: 0px;
+    color: #ffb20a;
+    line-height: 12px;
+    padding-right: 1em;
+  } */
 }
