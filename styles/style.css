@@ -763,47 +763,92 @@ li {
   .edu-content li {
     font-size: 2.7vw;
   }
-
-  /* 
-  
-  
-  
-  .edu-content h2,
-  li {
-    color: #e5e5e5;
-    font-weight: lighter;
-  }
-  
-  .edu-content h1 {
-    color: #e5e5e5;
-    font-weight: bold;
-    font-size: 1.6vw;
-  }
-  
-  .edu-content h2 {
-    font-size: 1vw;
-    font-weight: bold;
-  }
-  
-  .edu-content li {
-    font-size: 1vw;
-  }
-  
-  .edu-content li {
-    list-style: none;
-    color: #d6d1dc;
-    text-align: justify;
-    font-weight: normal;
-    font-size: 1.2vw;
-    padding-left: 15px;
-  }
-  
-  .edu-content li:before {
-    content: "▹";
-    position: relative;
-    left: 0px;
-    color: #ffb20a;
-    line-height: 12px;
-    padding-right: 1em;
-  } */
 }
+
+/* Pencraft Styling - Large Screen */
+
+div.pencraft {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding-top: 6vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.pencraft-top {
+  display: inherit;
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+
+.pencraft-content {
+  display: flex;
+}
+
+.pen-con-1 {
+  display: flex;
+  position: relative;
+  height: 25vw;
+  width: 100%;
+}
+
+.article-image {
+  position: absolute;
+  z-index: 1;
+}
+
+.article-image img {
+  width: 43.5%;
+  height: 100%;
+}
+
+.article-image::before {
+  content: "";
+  background-color: rgba(255, 178, 10, 0.6);
+  position: absolute;
+  width: 43.5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.article-image:hover::before {
+  content: "";
+  background: rgba(255, 178, 10, 0);
+  width: 43.5%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/* .article-content .article-title {
+  position: relative;
+}  */
+
+/* .article-content {
+  position: relative;
+  display: block;
+  width: 70%;
+  height: 50%;
+  z-index: 2;
+  left: 30%;
+  top: 25%;
+  background-color: #433951;
+}
+
+.article-content .article-description {
+  padding-left: 1vw;
+  padding-bottom: 1vw;
+}
+
+.article-content p {
+  text-align: justify;
+  font-size: 1vw;
+  color: #e5e5e5;
+} */
