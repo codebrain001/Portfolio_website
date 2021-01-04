@@ -863,3 +863,107 @@ div.pencraft {
   font-size: 1.2vw;
   color: #e5e5e5;
 }
+
+/* Pencraft Mobile Styling */
+@media screen and (max-width: 520px) {
+  .pencraft-top {
+    padding-bottom: 10px;
+  }
+
+  .pen {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  .article-image {
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article-image img {
+    width: 80%;
+  }
+
+  .article-content {
+    display: none;
+  }
+
+  /* 
+  .pen {
+    display: inherit;
+    position: relative;
+    height: 25vw;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .article-image {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .article-image img {
+    width: 43.5%;
+    height: 100%;
+  }
+
+  .article-image::before {
+    content: "";
+    background-color: rgba(255, 178, 10, 0.6);
+    position: absolute;
+    width: 43.5%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .article-image:hover::before {
+    content: "";
+    background: rgba(255, 178, 10, 0);
+    width: 43.5%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .article-content {
+    position: relative;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+    margin-left: 25vw;
+    width: 70%;
+    height: 75%;
+    z-index: 2;
+    top: 12.5%;
+    background-color: #544866;
+  }
+
+  .article-content .article-title {
+    padding: 0 0.5vw;
+    padding-bottom: 1vw;
+    padding-top: 0.5vw;
+    font-weight: bolder;
+    color: #e5e5e5;
+    text-align: justify;
+  }
+
+  .article-content .article-description {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+  }
+
+  .article-content p {
+    text-align: justify;
+    font-size: 1.2vw;
+    color: #e5e5e5;
+  } */
+}
