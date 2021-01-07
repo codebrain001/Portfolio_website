@@ -1,3 +1,6 @@
 
 #Ignore Mac System files
 .DS_Store
+.vscode
+
+CV.pdf
